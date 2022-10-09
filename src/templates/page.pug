@@ -1,14 +1,14 @@
 doctype html
 html(lang="en")
+    block config    
+        include Includes/config
     head
         meta(charset="UTF-8")
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         script(src="http://localhost:35729/livereload.js" defer)   
-        include Includes/config      
         block head
-        - const title = (head && head.title) ? head.title : site_name
-        title #{title}
-    body 
+            title= site_name + ' | ' + current_page
 
-block body
+    body 
+        block body

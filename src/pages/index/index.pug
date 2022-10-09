@@ -1,8 +1,12 @@
 extends Templates/page
 
-block head 
+block append config 
+    - current_page = 'Index'
+
+block append head 
     link(rel="stylesheet", href=require("./index.scss"))
     script(src=require("./index.js") defer)      
+
 
 block body 
     h1 Index
