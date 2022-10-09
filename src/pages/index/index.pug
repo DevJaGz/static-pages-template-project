@@ -1,0 +1,9 @@
+extends Templates/page
+
+block head 
+    link(rel="stylesheet", href=require("./index.scss"))
+    script(src=require("./index.js") defer)      
+
+block body 
+    h1 Index
+    a(href="about.html") About    

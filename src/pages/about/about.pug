@@ -1,0 +1,12 @@
+extends Templates/page
+
+block head 
+    link(rel="stylesheet", href=require("./about.scss"))
+    script(src=require("./about.js") defer) 
+    //- #{site_name} is taking from Templates/page --> include Includes/config
+    title #{site_name} | About 
+
+block body 
+    h1 About
+    a(href="index.html") Index
+    img.fadein(src=require("Assets/img/jpg/bg.jpg"), alt="image")
