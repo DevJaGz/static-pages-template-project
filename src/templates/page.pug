@@ -1,3 +1,5 @@
+include Mixins/layout/navbar/navbar.pug
+
 doctype html
 html(lang="en")
     block config    
@@ -11,5 +13,6 @@ html(lang="en")
             title= (current_page) ? site_name + ' | ' + current_page : site_name
 
     body 
+        +navbar
         block body
             h1 Default Body

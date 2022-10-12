@@ -75,6 +75,7 @@ const config = {
             Scripts: path.resolve(__dirname, 'src/scripts/'),
             Templates: path.resolve(__dirname, 'src/templates/'),
             Includes: path.resolve(__dirname, 'src/includes/'),
+            Mixins: path.resolve(__dirname, 'src/mixins/'),
         },
     },
     stats: 'errors-only'
